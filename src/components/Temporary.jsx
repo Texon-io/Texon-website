@@ -9,7 +9,7 @@ function Temporary() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowSecondText(true);
-        }, 2000); // يبدأ بعد ثانيتين
+        }, 1000); // يبدأ بعد ثانيتين
         return () => clearTimeout(timer);
     }, []);
 
@@ -31,9 +31,9 @@ function Temporary() {
             <motion.p
                 className=" text-muted z-10 "
                 initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 1, 0.6, 1] }}
+                animate={{ opacity: 0.9 }}
                 transition={{
-                    delay: 4,
+                    delay: 3,
                     duration: 2,
                     ease: "easeInOut",
                 }}
