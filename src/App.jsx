@@ -1,11 +1,15 @@
-import Temporary from "./components/ui/Temporary.jsx";
+import Navbar from "@/components/layout/Navbar.jsx";
+import Footer from "@/components/layout/Footer.jsx";
+import Hero from "@/sections/Hero.jsx";
 
 const App = () => {
-	return (
-		<>
-        <Temporary/>
-        </>
-	);
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
