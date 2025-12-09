@@ -4,7 +4,7 @@ function FocalBlur({
   size = 644,
   color = "bg-accent-second",
   opacity = "opacity-15",
-  blur = "blur-[300px]",
+  blur = "blur-[200px]",
   className = "",
 }) {
   return (

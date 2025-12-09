@@ -17,15 +17,15 @@ function Hero() {
     }, []);
 
   return (
-    <div className={`relative`}>
+    <div className={`relative hero-section h-[80vh]`}>
       {/*hero Section Intro Text*/}
       <div
-        className={`hero-intro text-center flex flex-col gap-3 px-36 py-12 my-12 mb-6`}
+        className={`hero-intro text-center flex flex-col gap-3 px-36 py-12 mt-14 mb-6`}
       >
         <AnimatedText
           delay={0.6}
           mode={`word`}
-          className={`font-orbitron font-semibold  text-5xl tracking-[10%] leading-[135%]`}
+          className={`font-orbitron font-semibold  text-5xl tracking-[10%] leading-[135%] px-10`}
         >
           Digital agency focused on software products
         </AnimatedText>
