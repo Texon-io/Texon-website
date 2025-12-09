@@ -1,0 +1,53 @@
+import {useEffect, useState} from "react";
+import {motion} from "framer-motion";
+
+import FocalBlur from "@/components/ui/FocalBlur.jsx";
+import AnimatedText from "@/components/ui/AnimatedText.jsx";
+import CurvedLoop from "@/components/ui/CurvedLoop.jsx";
+
+function Hero() {
+    const [showCurvedLoop, setShowCurvedLoop] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowCurvedLoop(true);
+        }, 4000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+  return (
+    <div className={`relative hero-section h-[80vh]`}>
+      {/*hero Section Intro Text*/}
+      <div
+        className={`hero-intro text-center flex flex-col gap-3 px-36 py-12 mt-14 mb-6`}
+      >
+        <AnimatedText
+          delay={0.6}
+          mode={`word`}
+          className={`font-orbitron font-semibold  text-5xl tracking-[10%] leading-[135%] px-10`}
+        >
+          Digital agency focused on software products
+        </AnimatedText>
+        <AnimatedText delay={2.5} className={`text-main-gray font-medium tracking-[15%] text-sm leading-6 px-52`}>Your partner for modern digital products — build cleaner, launch faster, and scale with confidence.</AnimatedText>
+      </div>
+      {/*    ==================================    */}
+
+      {/*  Blur   */}
+      <FocalBlur className={`top-[200px]`} />
+      {/*    ==================================    */}
+
+      {/*    Curved Text  */}
+            <div
+                className={`h-[300px]`}>
+                {showCurvedLoop && (
+                    <CurvedLoop marqueeText={`Think ✦ Design ✦ Build ✦ With ✦ Texon ✦`} />
+                )}
+                <span className={`opacity-0`}>vanished</span>
+            </div>
+
+    </div>
+  );
+}
+
+export default Hero;
