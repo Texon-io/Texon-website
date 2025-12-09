@@ -1,7 +1,7 @@
 
 import CardSwap, {Card} from "../components/ui/CardSwap.jsx"
 import DashedHeading from "@/components/ui/DashedHeading.jsx";
-import {cardBg} from '../utility/constants.js';
+import {cardBg} from '@/utils/constants.js';
 
 
 const cardsData = [

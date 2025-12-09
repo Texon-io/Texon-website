@@ -1,16 +1,49 @@
-# React + Vite
+# 🧩 Texon — Modern Minimal Web Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Texon is a minimalist, clean, and sharp web experience built with React and structured using a scalable component-based architecture.  
+The goal is simple: **fast, consistent, and future-proof frontend development.**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- **React + Vite**
+- **TailwindCSS** (optional)
+- **pnpm** (Package Manager)
+- Modular & Scalable Component Architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+/src
+├── assets/ # Images, icons, fonts
+├── components/ # Reusable UI + layout components
+├── pages/ # Page-level folders + internal sections
+├── hooks/ # Custom hooks
+├── utils/ # Pure helper functions
+├── helpers/ # Logic helpers (SEO, analytics, fetch wrapper)
+├── constants/ # Config, routes, colors, SEO defaults
+├── styles/ # Global styles / variables
+├── App.jsx
+├── main.jsx
+└── router.jsx # App routing
+
+
+📦 Folder Philosophy
+
+
+components/layout → Header, Footer, Navigation
+
+components/ui → Cards, blocks, section components
+
+sections/ → Each section has its own folder + subcomponents
+
+utils/ → Pure functions with no side effects and constants file
+
+
+-------------------------------------------------------
+💼 Author
+
+Texon Team
+Building sharp, minimal, high-performance digital experiences.
