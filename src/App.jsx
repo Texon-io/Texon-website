@@ -1,4 +1,4 @@
-import Temporary from "./components/Temporary.jsx";
+import Temporary from "./components/ui/Temporary.jsx";
 
 const App = () => {
 	return (
