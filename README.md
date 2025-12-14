@@ -29,9 +29,7 @@ The goal is simple: **fast, consistent, and future-proof frontend development.**
 ├── main.jsx
 └── router.jsx # App routing
 
-
 📦 Folder Philosophy
-
 
 components/layout → Header, Footer, Navigation
 
@@ -41,8 +39,8 @@ sections/ → Each section has its own folder + subcomponents
 
 utils/ → Pure functions with no side effects and constants file
 
+---
 
--------------------------------------------------------
 💼 Author
 
 Texon Team

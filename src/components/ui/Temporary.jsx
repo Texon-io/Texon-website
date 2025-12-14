@@ -1,5 +1,5 @@
 import Aurora from "./Aurura.jsx";
-import BlurText from "../BlurText.jsx";
+import BlurText from "./BlurText.jsx";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 

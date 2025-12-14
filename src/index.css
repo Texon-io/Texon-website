@@ -22,7 +22,7 @@
 
 html {
   scroll-behavior: smooth;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -30,22 +30,21 @@ html {
   color: #000;
 }
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    border: 1px solid var(--color-main-gray);
-    border-radius: 4px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-main-gray) transparent;
+  background-color: transparent;
+  border: 1px solid var(--color-main-gray);
+  border-radius: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-main-gray) transparent;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
-
 
 body {
   color: var(--color-main-text);
@@ -58,6 +57,12 @@ body {
 }
 .text-muted {
   @apply text-sm text-gray-400 opacity-65 tracking-widest;
+}
+.main-padding{
+    @apply px-3.5 py-1.5;
+}
+.main-rounded{
+    @apply rounded-[8px]
 }
 
 @theme inline {
