@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function DashedHeading({ heading, headClass = "", para, paraClass = "" }) {
+function DashedHeading({ heading, headClass = "", para, paraClass = "" , children}) {
   const wrapperRef = useRef(null);
 
   useGSAP(() => {
@@ -39,7 +39,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" }) {
   }, []);
 
   return (
-    <div ref={wrapperRef} className={`group py-5`}>
+    <div ref={wrapperRef} className={`group py-5 border-0 lg:border-[1px] border-x-0 border-gray-500/50`}>
       <h4
         className={`dashed-head relative font-orbitron capitalize font-semibold text-[40px] tracking-[2px] w-full opacity-0 translate-y-10 ${headClass}`}
       >
@@ -52,6 +52,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" }) {
       >
         {para}
       </p>
+        {children}
     </div>
   );
 }
