@@ -9,10 +9,10 @@ function FocalBlur({
 }) {
   return (
     <motion.div
-      initial={{ scale: 0.9, opacity: 0.1 }}
+      initial={{ scale: 0.9, opacity: 0.15 }}
       animate={{
         scale: [0.9, 1.05, 0.9],
-        opacity: [0.15, 0.25, 0.15],
+        opacity: [0.15, 0.30, 0.15],
       }}
       transition={{
         duration: 5,

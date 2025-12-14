@@ -197,7 +197,7 @@ const CardSwap = ({
   return (
     <div
       ref={container}
-      className="card-swap-container overflow-x-hidden"
+      className="card-swap-container overflow-x-hidden relative"
       style={{ width, height }}
     >
       {rendered}
