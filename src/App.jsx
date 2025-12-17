@@ -20,6 +20,7 @@ const App = () => {
         </>
     );
 import Projects from "@/sections/projects/Projects.jsx";
+import FAQ from "./sections/faq/FAQ.jsx";
 
 const App = () => {
   return (
@@ -27,8 +28,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <Services />
-        <Values/>
-        <Projects />
+      <Values />
+      <Projects />
+      <FAQ />
       <Footer />
     </>
   );
