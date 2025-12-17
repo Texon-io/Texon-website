@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-
 export default function FeatureCard({ title, image }) {
     return (
         <motion.div
@@ -9,19 +8,19 @@ export default function FeatureCard({ title, image }) {
             animate="rest"
             variants={{
                 rest: {
-                    backgroundColor: "rgba(255,255,255,0.05)",
+                    backgroundColor: "rgba(110,112,112,0.22)",
                 },
                 hover: {
-                    backgroundColor: "rgba(255,255,255,0.08)",
+                    backgroundColor: "rgba(110,112,112,0.3)",
                 },
             }}
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="
-            flex flex-col items-center
+        flex flex-col items-center
         rounded-2xl
         p-6
         backdrop-blur
-        cursor-pointer
+        cursor-default
         overflow-hidden
       "
         >
@@ -32,16 +31,17 @@ export default function FeatureCard({ title, image }) {
                 variants={{
                     rest: {
                         scale: 1,
-                        opacity: 0.6,
+                        filter: "brightness(0.8) saturate(0.7)",
                     },
                     hover: {
                         scale: 1.05,
-                        opacity: 1,
+                        filter: "brightness(1.2) saturate(3.5)",
                     },
                 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
                 className="w-44 h-44 mb-6 object-contain"
             />
+
             <p className="text-xl font-medium pb-3">{title}</p>
         </motion.div>
     );

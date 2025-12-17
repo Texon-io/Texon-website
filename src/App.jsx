@@ -19,6 +19,19 @@ const App = () => {
             <Footer/>
         </>
     );
+import Projects from "@/sections/projects/Projects.jsx";
+
+const App = () => {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Services />
+        <Values/>
+        <Projects />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
