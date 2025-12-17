@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <>
             <nav
-                className="fixed top-0 left-0 right-0 z-50 bg-main-black h-16 px-6 lg:px-12 lg:px-[105px] flex items-center justify-between">
+                className="fixed top-0 left-0 right-0 z-50 bg-main-black h-16 px-6 lg:px-12 lg:px-[105px] flex items-center justify-between border-b-[1px] border-gray-500/35">
                 <div>
                     <img className="w-28" src={noBgLogo} alt="logo"/>
                 </div>

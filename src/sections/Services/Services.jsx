@@ -54,7 +54,7 @@ function Services() {
       id={`services`}
       className={`flex justify-between items-center min-h-screen lg:h-screen max-lg:gap-6 px-16 sm:px-[105px] max-lg:flex-col max-lg:my-24`}
     >
-        <div className="services-text w-fit h-fit lg:h-full flex flex-col justify-center
+        <div className="services-text w-fit h-fit lg:h-4/5 flex flex-col justify-center
                 border-0 lg:border-x lg:border-gray-500/50">
         <DashedHeading
           heading={`Our Services.`}

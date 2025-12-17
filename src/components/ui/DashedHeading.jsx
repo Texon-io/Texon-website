@@ -39,7 +39,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" , childre
   }, []);
 
   return (
-    <div ref={wrapperRef} className={`group py-5 border-0 lg:border-[1px] border-x-0 border-gray-500/50`}>
+    <div ref={wrapperRef} className={`group py-5 border-0 border-x-0 lg:border-[1px] border-gray-500/50`}>
       <h4
         className={`dashed-head relative font-orbitron capitalize font-semibold text-[40px] tracking-[2px] w-full opacity-0 translate-y-10 ${headClass}`}
       >
