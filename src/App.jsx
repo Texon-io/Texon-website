@@ -13,6 +13,7 @@ const App = () => {
             <Services/>
             <Values/>
             <PricingSec/>
+            <Projects/>
             <Footer/>
         </>
     );
