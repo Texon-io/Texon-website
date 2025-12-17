@@ -17,7 +17,10 @@ function Hero() {
   }, []);
 
   return (
-    <section id={`hero`} className={`relative hero-section  h-[50vh] sm:h-[80vh]`}>
+    <section
+      id={`hero`}
+      className={`relative hero-section  h-[50vh] sm:h-[80vh]`}
+    >
       {/*hero Section Intro Text*/}
       <div
         className={`hero-intro text-center flex flex-col gap-3 px-2 md:px-6 lg:px-36 py-12 mt-14 mb-6`}

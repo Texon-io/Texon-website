@@ -4,6 +4,7 @@ import Hero from "@/sections/Hero/Hero.jsx";
 import Services from "@/sections/Services/Services.jsx";
 import Values from "@/sections/Values/Values.jsx";
 import Projects from "@/sections/projects/Projects.jsx";
+import FAQ from "./sections/faq/FAQ.jsx";
 
 const App = () => {
   return (
@@ -11,8 +12,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <Services />
-        <Values/>
-        <Projects />
+      <Values />
+      <Projects />
+      <FAQ />
       <Footer />
     </>
   );
