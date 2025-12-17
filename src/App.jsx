@@ -8,20 +8,6 @@ import Projects from "@/sections/projects/Projects.jsx";
 
 
 const App = () => {
-    return (
-        <>
-            <Navbar/>
-            <Hero/>
-            <Services/>
-            <Values/>
-            <PricingSec/>
-            <Projects/>
-            <Footer/>
-        </>
-    );
-import Projects from "@/sections/projects/Projects.jsx";
-
-const App = () => {
   return (
     <>
       <Navbar />
@@ -29,6 +15,7 @@ const App = () => {
       <Services />
         <Values/>
         <Projects />
+        <PricingSec/>
       <Footer />
     </>
   );
