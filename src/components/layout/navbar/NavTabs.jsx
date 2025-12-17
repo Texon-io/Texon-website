@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Separator } from "@/components/ui/separator"
+
 
 const navItems = [
     { name: "Home", id: "hero" },
@@ -55,19 +57,26 @@ export default function NavTabs({ mobile = false, onClose = () => {} }) {
                     ))}
                 </ul>
             ) : (
-                <ul className="flex-center gap-8 text-white">
+                <ul className="flex-center gap-8 text-white h-full">
                     {navItems.map((item) => (
-                        <li key={item.id}>
-                            <button
-                                onClick={() => scrollTo(item.id)}
-                                className={`
+                        <>
+                            <li key={item.id}>
+                                <button
+                                    onClick={() => scrollTo(item.id)}
+                                    className={`
                   ${baseClasses} ${hoverClasses}
-                  ${active === item.id ? activeClasses : "text-gray-700"}
+                  ${active === item.id ? activeClasses : "text-gray-500"}
                 `}
-                            >
-                                {item.name}
-                            </button>
-                        </li>
+                                >
+                                    {item.name}
+                                </button>
+                            </li>
+                            <div className="h-6 flex items-center">
+                                <Separator
+                                    orientation="vertical"
+                                    className="bg-gray-500/35"
+                                />
+                            </div></>
                     ))}
                 </ul>
             )}

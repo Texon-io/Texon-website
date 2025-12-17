@@ -3,6 +3,7 @@ import DashedHeading from "@/components/ui/DashedHeading.jsx";
 import {cardBg, cardBg2, cardBg3} from "@/utils/constants.js";
 import {useEffect, useState} from "react";
 import {CodeXml, LaptopMinimal, Smartphone} from "lucide-react";
+import Line from "@/components/ui/Line.jsx";
 
 const cardsData = [
   {
@@ -51,9 +52,10 @@ function Services() {
   return (
     <section
       id={`services`}
-      className={` flex justify-between items-center min-h-screen lg:h-screen max-lg:gap-6 px-16 sm:px-[105px] max-lg:flex-col max-lg:my-24`}
+      className={`flex justify-between items-center min-h-screen lg:h-screen max-lg:gap-6 px-16 sm:px-[105px] max-lg:flex-col max-lg:my-24`}
     >
-      <div className={`services-text w-fit h-fit lg:h-full flex flex-col justify-center`}>
+        <div className="services-text w-fit h-fit lg:h-4/5 flex flex-col justify-center
+                border-0 lg:border-x lg:border-gray-500/50">
         <DashedHeading
           heading={`Our Services.`}
           para={`Focused, fast, and built to make a difference.`}
