@@ -2,8 +2,8 @@ function ProjectCard({ project }) {
     return (
         <div
             className={`project-card w-full md:w-3/5 lg:w-88 ${
-                project.id % 2 === 0 ? "" : "sm:mt-36 mr-0"
-            } my-10`}
+                project.id % 2 === 0 ? "" : "sm:mt-44"
+            } `}
         >
             {/* Project Image */}
             <div className="card-img rounded-2xl bg-gray-800 overflow-hidden h-80 w-full relative group">

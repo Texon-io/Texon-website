@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 const navItems = [
     { name: "Home", id: "hero" },
     { name: "Services", id: "services" },
-    { name: "About", id: "about" },
+    { name: "Projects", id: "projects" },
     { name: "Pricing", id: "pricing" },
     { name: "Contact", id: "contact" },
 ];

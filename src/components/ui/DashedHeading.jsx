@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function DashedHeading({ heading, headClass = "", para, paraClass = "" , children, border=true}) {
+function DashedHeading({ heading, headClass = "", para, paraClass = "" , children, scrollAnimate="top 85%"}) {
   const wrapperRef = useRef(null);
 
   useGSAP(() => {
@@ -19,7 +19,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" , childre
           ease: "ease-in",
           scrollTrigger: {
               trigger: headEl,
-              start: "top 80%",
+              start: scrollAnimate,
               toggleActions: "play none none reverse",
           },
       });
@@ -27,8 +27,8 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" , childre
     gsap.to(paraEl, {
       y: 0,
       opacity: 1,
-      delay: 0.85,
-      duration: 0.7,
+      delay: 0.35,
+      duration: 1,
       ease: "ease-in",
       scrollTrigger: {
         trigger: paraEl,
@@ -39,7 +39,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" , childre
   }, []);
 
   return (
-    <div ref={wrapperRef} className={`group py-5 ${border && "border-0 border-x-0 lg:border-[1px] border-gray-500/50"}`}>
+    <div ref={wrapperRef} className={`group py-5 `}>
       <h4
         className={`${headClass} dashed-head relative font-orbitron capitalize font-semibold text-4xl tracking-[4px] w-full opacity-0 translate-y-10 `}
       >

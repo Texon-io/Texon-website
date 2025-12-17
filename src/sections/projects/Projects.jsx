@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import DashedHeading from "@/components/ui/DashedHeading.jsx";
+import HighlightParagraph from "@/components/ui/HighlightParagraph.jsx";
 import ProjectCard from "./ProjectCard.jsx";
 import {
     ba2e3atElkotob,
@@ -75,11 +76,12 @@ function Projects() {
     return (
         <section
             id="projects"
-            className="w-[95%] mx-auto rounded-t-[144px] bg-gray-dark min-h-screen mt-48 p-10 lg:p-20 "
+            className="w-[95%] mx-auto rounded-t-[144px] rounded-b-[72px] bg-gray-dark min-h-screen  p-10 lg:p-20 "
         >
             {/* Heading */}
             <div className="flex max-lg:flex-col max-lg:gap-10 justify-between items-center">
                 <DashedHeading
+                    scrollAnimate={'top 95%'}
                     heading={
                         <>
                             Our <br />
@@ -89,10 +91,11 @@ function Projects() {
                     border={false}
                     headClass="text-6xl w-48"
                 />
-                <p className="w-80">
+                <HighlightParagraph
+                    highlight="Explore what we’ve built.">
                     Texon turns vision into reality — shaped by smart thinking, and results
                     you can actually measure.
-                </p>
+                </HighlightParagraph>
             </div>
 
             {/* Cards */}
