@@ -58,13 +58,12 @@ body {
 .text-muted {
   @apply text-sm text-gray-400 opacity-65 tracking-widest;
 }
-.main-padding{
-    @apply px-3.5 py-1.5;
+.main-padding {
+  @apply px-3.5 py-1.5;
 }
-.main-rounded{
-    @apply rounded-[8px]
+.main-rounded {
+  @apply rounded-[8px];
 }
-
 
 /*========================================================================================*/
 
