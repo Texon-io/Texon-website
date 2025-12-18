@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
-export default function FeatureCard({ title, image }) {
+export default function FeatureCard({title, image}) {
     return (
         <motion.div
             initial="rest"
@@ -14,7 +14,7 @@ export default function FeatureCard({ title, image }) {
                     backgroundColor: "rgba(110,112,112,0.3)",
                 },
             }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{duration: 0.3, ease: "easeOut"}}
             className="
         flex flex-col items-center
         rounded-2xl
@@ -38,11 +38,11 @@ export default function FeatureCard({ title, image }) {
                         filter: "brightness(1.2) saturate(3.5)",
                     },
                 }}
-                transition={{ duration: 0.35, ease: "easeOut" }}
+                transition={{duration: 0.35, ease: "easeOut"}}
                 className="w-44 h-44 mb-6 object-contain"
             />
 
-            <p className="text-xl font-medium pb-3">{title}</p>
+            <p className="text-xl md font-medium pb-3 text-center">{title}</p>
         </motion.div>
     );
 }

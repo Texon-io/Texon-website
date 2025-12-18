@@ -141,7 +141,8 @@ export default function PricingSec() {
 
 
                 {/* Cards */}
-                <div className="mt-24 grid md:grid-cols-3 gap-8 px-4 md:px-8">
+                <div
+                    className="mt-24 grid md:grid-cols-3 sm:grid-cols-2 gap-8 px-4 md:px-0 ">
                     {PRICING_DATA[active].map((plan, i) => (
                         <PricingCard key={i} {...plan} />
                     ))}
@@ -151,7 +152,7 @@ export default function PricingSec() {
                 <FocalBlur blur="blur-[300px]" opacity="opacity-10" className={`top-[200px] w-72 md:w-1/4`}/>
 
                 {/* Footer Note */}
-                <p className="mt-12 text-center text-sm text-gray-500">
+                <p className="mt-12 text-center text-sm text-gray-400">
                     Prices in USD. Egyptian clients can pay the equivalent in EGP at
                     today’s rate — no extra fees.
                 </p>

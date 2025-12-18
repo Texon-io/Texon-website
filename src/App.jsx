@@ -5,6 +5,7 @@ import Services from "@/sections/Services/Services.jsx";
 import Values from "@/sections/Values/Values.jsx";
 import PricingSec from "@/sections/Pricing/PricingSec.jsx";
 import Projects from "@/sections/projects/Projects.jsx";
+import VisionSec from "@/sections/Vision/VisionSec.jsx";
 
 
 const App = () => {
@@ -14,24 +15,12 @@ const App = () => {
             <Hero/>
             <Services/>
             <Values/>
-            <PricingSec/>
             <Projects/>
+            <PricingSec/>
+            <VisionSec/>
             <Footer/>
         </>
     );
-import Projects from "@/sections/projects/Projects.jsx";
-
-const App = () => {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Services />
-        <Values/>
-        <Projects />
-      <Footer />
-    </>
-  );
 };
 
 export default App;

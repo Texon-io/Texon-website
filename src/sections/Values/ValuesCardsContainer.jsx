@@ -1,8 +1,8 @@
 import {valImg1, valImg2, valImg3} from "@/utils/constants.js";
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
+import {useRef} from "react";
+import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import FeatureCard from "@/sections/Values/FeatureCard.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -40,7 +40,7 @@ export default function ValuesCardsContainer() {
     return (
         <div
             ref={cardsRef}
-            className="grid md:grid-cols-3 gap-16 md:px-20 "
+            className="grid md:grid-cols-3 sm:grid-cols-2 gap-16 md:gap-8 md:px-20"
         >
             <FeatureCard
                 title="Built to last, trusted always."

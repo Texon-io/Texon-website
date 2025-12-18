@@ -8,7 +8,10 @@ import TasklyWeb from "../../public/images/Taskly-web.png"
 import valImg1 from "../../public/images/value-card-1.png";
 import valImg2 from "../../public/images/value-card-2.png";
 import valImg3 from "../../public/images/value-card-3.png";
+import visionVid from "../../public/images/vision-vid.gif";
 
-export { cardBg,cardBg2, cardBg3, noBgLogo,ba2e3atElkotob,
+export {
+    cardBg, cardBg2, cardBg3, noBgLogo, ba2e3atElkotob,
     TasklyDesktop,
-    TasklyWeb,valImg1,valImg2,valImg3 };
+    TasklyWeb, valImg1, valImg2, valImg3, visionVid
+};
