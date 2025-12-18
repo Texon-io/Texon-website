@@ -77,7 +77,6 @@ function Projects() {
       {/* Heading */}
       <div className="flex max-lg:flex-col max-lg:gap-10  lg:justify-between items-center mb-10 max-lg:w-1/2 mx-auto">
         <DashedHeading
-            className={`w-full`}
           scrollAnimate={"top 95%"}
           heading={
             <>

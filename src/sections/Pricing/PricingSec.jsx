@@ -128,7 +128,7 @@ export default function PricingSec() {
     const [active, setActive] = useState("website");
 
     return (
-        <section className="py-32 relative">
+        <section id={`pricing`} className="py-32 relative">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Title */}
