@@ -1,24 +1,33 @@
-import { motion } from "framer-motion";
+export default function FooterColumn({title, links}) {
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        if (!section) return;
 
-function FooterColumn({ title, links }) {
-  return (
-    <div>
-      <h3 className="mb-2 text-xl">{title}</h3>
-      <ul className="space-y-1 text-gray-400 text-lg">
-        {links.map((link, i) => (
-          <li key={i}>
-            <motion.a
-              href="#"
-              whileHover={{ x: 4 }}
-              className="inline-block hover:text-white transition"
-            >
-              {link}
-            </motion.a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
+
+    return (
+        <div>
+            <h3 className="mb-4 text-lg font-medium">{title}</h3>
+
+            <ul className="space-y-2 text-gray-400">
+                {links.map((link, i) => (
+                    <li key={i}>
+                        <button
+                            onClick={() => handleScroll(link.target)}
+                            className="
+                transition hover:text-white
+                cursor-pointer text-left
+              "
+                        >
+                            {link.label}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
-
-export default FooterColumn;

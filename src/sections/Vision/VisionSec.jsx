@@ -28,7 +28,7 @@ export default function VisionSec() {
 
 
     return (
-        <section ref={sectionRef} className="">
+        <section ref={sectionRef} className="" id={`vision`}>
             <div className="grid-band">
                 <div className="max-w-5xl mx-auto px-6 md:px-12 py-10">
                     <div className="grid md:grid-cols-2 gap-20 items-center ">
