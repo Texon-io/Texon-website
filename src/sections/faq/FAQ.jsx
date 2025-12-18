@@ -62,7 +62,7 @@ function FAQ() {
         </div>
       {/*  Heading  */}
       <div className={`flex-center mb-20`}>
-        <h5 className={`text-3xl sm:text-5xl font-medium tracking-wider`}>
+        <h5 className={`text-3xl sm:text-5xl font-semibold tracking-wider leading-14 capitalize`}>
           Got a Question!
           <br />
           We got answers

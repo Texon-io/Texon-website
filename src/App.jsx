@@ -6,6 +6,7 @@ import Values from "@/sections/Values/Values.jsx";
 import PricingSec from "@/sections/Pricing/PricingSec.jsx";
 import Projects from "@/sections/projects/Projects.jsx";
 import FAQ from "@/sections/faq/FAQ.jsx";
+import Contact from "@/sections/contact/Contact.jsx";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Projects />
         <PricingSec/>
         <FAQ/>
+        <Contact/>
       <Footer />
     </>
   );
