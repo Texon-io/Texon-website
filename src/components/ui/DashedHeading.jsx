@@ -23,7 +23,8 @@ function DashedHeading({
     gsap.to(headEl, {
       y: 0,
       opacity: 1,
-      duration: 0.7,
+      duration: 1,
+        delay:0.35,
       ease: "ease-in",
       scrollTrigger: {
         trigger: headEl,

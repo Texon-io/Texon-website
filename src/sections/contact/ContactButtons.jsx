@@ -11,7 +11,7 @@ function ContactButtons({activeServices, onClick}) {
 
 
     return (
-        <div className="flex flex-wrap gap-4 items-center justify-start w-2/3 px-2">
+        <div className="flex flex-wrap gap-4 items-center justify-start w-full lg:w-2/3 ">
             {servicesProvided.map((service) => (
                 <button
                     key={service}
