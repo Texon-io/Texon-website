@@ -7,6 +7,22 @@ import Services from "@/sections/Services/Services.jsx";
 import Values from "@/sections/Values/Values.jsx";
 import PricingSec from "@/sections/Pricing/PricingSec.jsx";
 import Projects from "@/sections/projects/Projects.jsx";
+import VisionSec from "@/sections/Vision/VisionSec.jsx";
+
+
+const App = () => {
+    return (
+        <>
+            <Navbar/>
+            <Hero/>
+            <Services/>
+            <Values/>
+            <Projects/>
+            <PricingSec/>
+            <VisionSec/>
+            <Footer/>
+        </>
+    );
 import FAQ from "@/sections/faq/FAQ.jsx";
 import Contact from "@/sections/contact/Contact.jsx";
 
