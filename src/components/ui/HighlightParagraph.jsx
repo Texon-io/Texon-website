@@ -9,7 +9,7 @@ export default function HighlightParagraph({
   highlight,
   className = "",
   children,
-  del,
+
 }) {
   const paraRef = useRef(null);
 
@@ -20,7 +20,7 @@ export default function HighlightParagraph({
       opacity: 1,
       duration: 0.8,
       delay: 1.35,
-      ease: "power3.inOut",
+      ease: "ease-in",
       scrollTrigger: {
         trigger: el,
         start: "top 80%",
@@ -33,7 +33,7 @@ export default function HighlightParagraph({
     <p
       ref={paraRef}
       className={twMerge(
-        "text-gray-400 opacity-0 translate-y-20 max-w-sm text-lg/8 md:text-xl/10",
+        "text-gray-400 opacity-0 translate-y-20 w-80 text-lg/8 md:text-xl/10",
         className,
       )}
     >
