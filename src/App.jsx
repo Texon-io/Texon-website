@@ -1,3 +1,5 @@
+import { Toaster } from "@/components/ui/sonner"
+
 import Navbar from "@/components/layout/navbar/Navbar.jsx";
 import Footer from "@/components/layout/footer/Footer.jsx";
 import Hero from "@/sections/Hero/Hero.jsx";
@@ -21,6 +23,29 @@ const App = () => {
             <Footer/>
         </>
     );
+import FAQ from "@/sections/faq/FAQ.jsx";
+import Contact from "@/sections/contact/Contact.jsx";
+
+
+const App = () => {
+  return (
+    <>
+        <Toaster
+            position="top-right"
+            duration={4000}
+            theme="light"
+        />
+      <Navbar />
+      <Hero />
+      <Services />
+        <Values/>
+        <Projects />
+        <PricingSec/>
+        <FAQ/>
+        <Contact/>
+      <Footer />
+    </>
+  );
 };
 
 export default App;

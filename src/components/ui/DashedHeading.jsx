@@ -5,24 +5,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function DashedHeading({ heading, headClass = "", para, paraClass = "" , children, scrollAnimate="top 85%"}) {
+function DashedHeading({
+  heading,
+  headClass = "",
+  para,
+  paraClass = "",
+  children,
+  scrollAnimate = "top 85%",
+    className=""
+}) {
   const wrapperRef = useRef(null);
 
   useGSAP(() => {
     const paraEl = wrapperRef.current.querySelector(".dashed-para");
     const headEl = wrapperRef.current.querySelector(".dashed-head");
 
-      gsap.to(headEl, {
-          y: 0,
-          opacity: 1,
-          duration: 0.7,
-          ease: "ease-in",
-          scrollTrigger: {
-              trigger: headEl,
-              start: scrollAnimate,
-              toggleActions: "play none none reverse",
-          },
-      });
+    gsap.to(headEl, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+        delay:0.35,
+      ease: "ease-in",
+      scrollTrigger: {
+        trigger: headEl,
+        start: scrollAnimate,
+        toggleActions: "play none none reverse",
+      },
+    });
 
     gsap.to(paraEl, {
       y: 0,
@@ -39,7 +48,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" , childre
   }, []);
 
   return (
-    <div ref={wrapperRef} className={`group py-5 `}>
+    <div ref={wrapperRef} className={`group py-5 ${className}`}>
       <h4
         className={`${headClass} dashed-head relative font-orbitron capitalize font-semibold text-4xl tracking-[4px] w-full opacity-0 translate-y-10 `}
       >
@@ -52,7 +61,7 @@ function DashedHeading({ heading, headClass = "", para, paraClass = "" , childre
       >
         {para}
       </p>
-        {children}
+      {children}
     </div>
   );
 }
