@@ -56,7 +56,7 @@ function Contact() {
         }
     };
     return (
-        <section id={`contact`}>
+        <section id={`contact`} className={`mt-8`}>
             {/*  Heading  */}
             <div className={`flex-center mb-20`}>
                 <h5 className={`text-3xl sm:text-5xl font-semibold tracking-wider capitalize text-main-gray leading-14 text-center`}>

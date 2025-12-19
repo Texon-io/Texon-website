@@ -3,8 +3,8 @@ export function VideoCard({src}) {
         <div
             className="
         relative rounded-2xl overflow-hidden
-         border border-white/10
-        p-4
+         border border-white/20
+
       "
         >
             <img

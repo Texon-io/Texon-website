@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner"
+import Button from "@/components/ui/Button/Button.jsx";
 
 
 function ContactForm({onSubmit}) {
@@ -93,14 +94,10 @@ function ContactForm({onSubmit}) {
                 required
             />
 
-            {/* Submit Button (temporary) */}
-            <button
-                type="submit"
+            {/* Submit Button */}
+            <Button
                 onClick={handleClick}
-                className="mt-8 w-fit py-4 bg-main-white text-main-black font-semibold text-xl rounded-full hover:bg-main-white/90 transition-colors duration-300 px-8 cursor-pointer"
-            >
-                Send Message
-            </button>
+                className={`mt-8 w-fit py-4 px-8 text-xl`}>Send Message</Button>
         </form>
     );
 }
