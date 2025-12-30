@@ -56,7 +56,7 @@ export default function VisionSec() {
                             </p>
 
 
-                            <Button className="px-6 py-3 text-lg font-medium">Get Started</Button>
+                            <a href={`#contact`}><Button className="px-6 py-3 text-lg font-medium">Get Started</Button></a>
                         </div>
 
                     </div>
