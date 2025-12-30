@@ -1,4 +1,4 @@
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "sonner";
 
 import Navbar from "@/components/layout/navbar/Navbar.jsx";
 import Footer from "@/components/layout/footer/Footer.jsx";
@@ -10,26 +10,21 @@ import Projects from "@/sections/projects/Projects.jsx";
 import VisionSec from "@/sections/Vision/VisionSec.jsx";
 import Contact from "@/sections/contact/Contact.jsx";
 
-
 const App = () => {
-    return (
-        <>
-            <Toaster
-                position="top-right"
-                duration={4000}
-
-            />
-            <Navbar/>
-            <Hero/>
-            <Services/>
-            <Values/>
-            <Projects/>
-            <PricingSec/>
-            <VisionSec/>
-            <Contact/>
-            <Footer/>
-        </>
-    );
-}
+  return (
+    <>
+      <Toaster position="top-right" duration={4000} />
+      <Navbar />
+      <Hero />
+      <Services />
+      <Values />
+      <Projects />
+      <PricingSec />
+      <VisionSec />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
 export default App;
