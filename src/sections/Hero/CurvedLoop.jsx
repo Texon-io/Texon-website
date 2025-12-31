@@ -30,7 +30,7 @@ const CurvedLoop = ({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0 },
+      { threshold: 0 }
     );
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();

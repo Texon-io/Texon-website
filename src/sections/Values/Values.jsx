@@ -4,7 +4,7 @@ import ValuesCardsContainer from "@/sections/Values/ValuesCardsContainer.jsx";
 
 export default function Values() {
   return (
-    <section className="relative overflow-hidden mt-12">
+    <section id="values" className="relative overflow-hidden mt-12">
       {/* Grid Background */}
       <div className="bg-grid px-6 md:px-12 py-16">
         {/* Content */}

@@ -12,7 +12,7 @@ function DashedHeading({
   paraClass = "",
   children,
   scrollAnimate = "top 85%",
-    className=""
+  className = "",
 }) {
   const wrapperRef = useRef(null);
 
@@ -24,7 +24,7 @@ function DashedHeading({
       y: 0,
       opacity: 1,
       duration: 1,
-        delay:0.35,
+      delay: 0.35,
       ease: "ease-in",
       scrollTrigger: {
         trigger: headEl,

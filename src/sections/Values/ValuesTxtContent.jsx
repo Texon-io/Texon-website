@@ -22,10 +22,10 @@ export default function ValuesTxtContent() {
     });
   }, []);
   return (
-    <div className="grid text-center md:text-start md:grid-cols-2 gap-12 md:gap-52 mb-20">
+    <div className="grid text-center md:text-start md:grid-cols-2 gap-6 sm:gap-12 md:gap-52 mb-20">
       <h2
         ref={headingRef}
-        className="text-3xl md:text-4xl font-medium leading-tight font-orbitron opacity-0 translate-y-20"
+        className="text-2xl md:text-4xl font-medium leading-tight font-orbitron opacity-0 translate-y-20 "
       >
         Made for creators <br />
         who turn ideas into impact

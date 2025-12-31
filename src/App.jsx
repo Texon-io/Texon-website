@@ -9,6 +9,7 @@ import PricingSec from "@/sections/Pricing/PricingSec.jsx";
 import Projects from "@/sections/projects/Projects.jsx";
 import VisionSec from "@/sections/Vision/VisionSec.jsx";
 import Contact from "@/sections/contact/Contact.jsx";
+import TeamSection from "./sections/Team/TeamSection";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Projects />
       <PricingSec />
       <VisionSec />
+      <TeamSection />
       <Contact />
       <Footer />
     </>

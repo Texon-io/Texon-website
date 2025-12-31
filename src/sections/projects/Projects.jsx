@@ -6,7 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DashedHeading from "@/components/ui/DashedHeading.jsx";
 import HighlightParagraph from "@/components/ui/HighlightParagraph.jsx";
 import ProjectCard from "./ProjectCard.jsx";
-import { ba2e3atElkotob, TasklyDesktop, TasklyWeb } from "@/utils/constants.js";
+import {
+  ba2e3atElkotob,
+  TasklyDesktop,
+  TasklyWeb,
+  vipeCart,
+} from "@/utils/constants.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +20,7 @@ const projectsData = [
     id: "0",
     title: "Ba2e3at El-kotob Store",
     description:
-      "An e-commerce platform for second-hand books with a clean, minimal dashboard to manage inventory, orders, and users efficiently.",
+      "An e-commerce platform for second-hand books and stationery, featuring a curated selection, shopping cart, and a minimal admin dashboard for managing inventory, orders, and users.",
     tech: ["React", "Tailwind", "Framer Motion", "React Query"],
     image: ba2e3atElkotob,
     link: "https://bae3t-elkotb.netlify.app/",
@@ -25,12 +30,21 @@ const projectsData = [
     title: "Taskly Web App",
     description:
       "A web-based productivity app that allows users to manage tasks, set deadlines, and visualize progress with charts.",
-    tech: ["React", "Framer Motion", "Tailwind", "Chart.js", "Subabase"],
+    tech: ["React", "Framer Motion", "Tailwind", "Chart.js", "Supabase"],
     image: TasklyWeb,
     link: "https://taskly-mnmlst.netlify.app/",
   },
   {
     id: "2",
+    title: "VipeCart E-Commerce App",
+    description:
+      "A modern e-commerce platform with product browsing, categories, shopping cart, wishlist, and seamless checkout experience, with full control dashboard for admin.",
+    tech: ["React", "Zustand", "Tailwind", "Shadcn", "React Query", "Supabase"],
+    image: vipeCart,
+    link: "https://vipecart.netlify.app/",
+  },
+  {
+    id: "3",
     title: "Taskly Desktop App",
     description:
       "A desktop version of Taskly, optimized for offline usage with local storage, fast interactions, and a distraction-free interface.",
@@ -44,7 +58,7 @@ function Projects() {
 
   useGSAP(() => {
     const cards = gsap.utils.toArray(
-      cardsWrapperRef.current.querySelectorAll(".project-card"),
+      cardsWrapperRef.current.querySelectorAll(".project-card")
     );
 
     gsap.fromTo(
@@ -65,38 +79,41 @@ function Projects() {
           trigger: cardsWrapperRef.current,
           start: "top 50%",
         },
-      },
+      }
     );
   }, []);
 
   return (
     <section
       id="projects"
-      className="w-[95%] mx-auto rounded-4xl lg:rounded-t-[144px] lg:rounded-b-[72px] bg-gray-dark min-h-screen  p-10 lg:p-20 "
+      className="w-[95%] mx-auto rounded-4xl lg:rounded-t-[144px] lg:rounded-b-[72px] bg-gray-dark min-h-screen  p-7 lg:p-20 "
     >
       {/* Heading */}
-      <div className="flex max-lg:flex-col max-lg:gap-10  lg:justify-between items-center mb-10 max-lg:w-1/2 mx-auto">
-        <DashedHeading
-          scrollAnimate={"top 95%"}
-          heading={
-            <>
-              Our <br />
-              Projects.
-            </>
-          }
-          border={false}
-          headClass="text-6xl w-48"
-        />
-        <HighlightParagraph highlight="Explore what we’ve built.">
-          Texon turns vision into reality — shaped by smart thinking, and
-          results you can actually measure.
-        </HighlightParagraph>
+      <div className="mb-12 px-2 sm:px-12 lg:px-0">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-8 lg:gap-16 w-fit max-w-7xl mx-auto">
+          <DashedHeading
+            scrollAnimate="top 80%"
+            heading={
+              <>
+                Our <br className="hidden lg:block" /> Projects.
+              </>
+            }
+            headClass="text-5xl sm:text-6xl lg:text-7xl tracking-tight"
+          />
+          <HighlightParagraph
+            className="text-base sm:text-lg max-md:w-full"
+            highlight="Explore what we’ve built."
+          >
+            Texon turns vision into reality — shaped by smart thinking, and
+            results you can actually measure.
+          </HighlightParagraph>
+        </div>
       </div>
 
       {/* Cards */}
       <div
         ref={cardsWrapperRef}
-        className="grid lg:grid-cols-2 px-0 xl:px-20 justify-items-center mt-10"
+        className="grid lg:grid-cols-2 px-0 sm:px-12 xl:px-20 justify-items-center mt-10"
       >
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />

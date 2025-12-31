@@ -2,10 +2,13 @@ import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 
 const socials = [
-  { icon: Facebook, href: "#" },
-  { icon: Instagram, href: "#" },
-  { icon: Mail, href: "#" },
-  { icon: Linkedin, href: "#" },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/profile.php?id=61586025982366",
+  },
+  { icon: Instagram, href: "https://www.instagram.com/texon_dev_/" },
+  { icon: Mail, href: "mailto:texondev.info@gmail.com" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/texon-io-dev/" },
 ];
 
 export default function SocialsSec() {
@@ -15,6 +18,7 @@ export default function SocialsSec() {
         <motion.a
           key={i}
           href={href}
+          target="_blank"
           whileHover={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 300 }}
           className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10"
