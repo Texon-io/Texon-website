@@ -50,6 +50,7 @@ body {
   color: var(--color-main-text);
   background-color: var(--color-black);
   font-family: var(--font-quicksand);
+  overflow-x: hidden;
 }
 
 .flex-center {
@@ -65,11 +66,14 @@ body {
   @apply rounded-[8px];
 }
 
-input::placeholder, textarea::placeholder{
-    opacity: 1;
-    transition: opacity 0.4s ease-in-out;
-}input:focus::placeholder, textarea:focus::placeholder{
-    opacity: 0;
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0;
 }
 
 /*========================================================================================*/

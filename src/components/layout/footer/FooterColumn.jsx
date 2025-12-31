@@ -8,7 +8,7 @@ function FooterColumn({ title, links }) {
         {links.map((link, i) => (
           <li key={i}>
             <motion.a
-              href="#"
+              href={`#${link.toLowerCase()}`}
               whileHover={{ x: 4 }}
               className="inline-block hover:text-white transition"
             >
