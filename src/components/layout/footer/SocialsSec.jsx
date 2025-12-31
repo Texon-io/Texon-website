@@ -4,11 +4,11 @@ import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 const socials = [
   {
     icon: Facebook,
-    href: "https://www.facebook.com/profile.php?id=61586025982366",
+    href: "https://www.facebook.com/texon.io",
   },
-  { icon: Instagram, href: "https://www.instagram.com/texon_dev_/" },
+  { icon: Instagram, href: "https://www.instagram.com/texon.io/" },
   { icon: Mail, href: "mailto:texondev.info@gmail.com" },
-  { icon: Linkedin, href: "https://www.linkedin.com/company/texon-io-dev/" },
+  { icon: Linkedin, href: "https://linkedin.com/company/texon-io" },
 ];
 
 export default function SocialsSec() {

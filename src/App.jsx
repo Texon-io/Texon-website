@@ -1,15 +1,17 @@
+import { Suspense, lazy } from "react";
 import { Toaster } from "sonner";
 
 import Navbar from "@/components/layout/navbar/Navbar.jsx";
 import Footer from "@/components/layout/footer/Footer.jsx";
 import Hero from "@/sections/Hero/Hero.jsx";
-import Services from "@/sections/Services/Services.jsx";
-import Values from "@/sections/Values/Values.jsx";
-import PricingSec from "@/sections/Pricing/PricingSec.jsx";
-import Projects from "@/sections/projects/Projects.jsx";
-import VisionSec from "@/sections/Vision/VisionSec.jsx";
-import Contact from "@/sections/contact/Contact.jsx";
-import TeamSection from "./sections/Team/TeamSection";
+
+const Services = lazy(() => import("@/sections/Services/Services.jsx"));
+const Values = lazy(() => import("@/sections/Values/Values.jsx"));
+const PricingSec = lazy(() => import("@/sections/Pricing/PricingSec.jsx"));
+const Projects = lazy(() => import("@/sections/projects/Projects.jsx"));
+const VisionSec = lazy(() => import("@/sections/Vision/VisionSec.jsx"));
+const Contact = lazy(() => import("@/sections/contact/Contact.jsx"));
+const TeamSection = lazy(() => import("./sections/Team/TeamSection"));
 
 const App = () => {
   return (
@@ -17,13 +19,19 @@ const App = () => {
       <Toaster position="top-right" duration={4000} />
       <Navbar />
       <Hero />
-      <Services />
-      <Values />
-      <Projects />
-      <PricingSec />
-      <VisionSec />
-      <TeamSection />
-      <Contact />
+      <Suspense
+        fallback={
+          <div className="py-20 text-center text-white">Loading...</div>
+        }
+      >
+        <Services />
+        <Values />
+        <Projects />
+        <PricingSec />
+        <VisionSec />
+        <TeamSection />
+        <Contact />
+      </Suspense>
       <Footer />
     </>
   );
