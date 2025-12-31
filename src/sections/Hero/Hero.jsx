@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+
 import FocalBlur from "@/components/ui/FocalBlur.jsx";
 import AnimatedText from "@/components/ui/AnimatedText.jsx";
 import CurvedLoop from "@/sections/Hero/CurvedLoop.jsx";

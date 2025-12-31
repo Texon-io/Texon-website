@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: "Abdulrahman Saad",
-    role: "CTO",
+    role: "CTO & Co-Founder",
     desc: "Architecting robust, scalable systems and leading technical strategy.",
     img: abdo,
   },
@@ -35,7 +35,7 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="py-20 bg-black text-white">
+    <section id="team" className="py-20 bg-black text-white">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-5xl font-bold text-center mb-4 tracking-widest font-orbitron">
           Our Team
@@ -54,6 +54,7 @@ export default function TeamSection() {
                 <img
                   src={member.img}
                   alt={member.name}
+                  loading="lazy"
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60" />
